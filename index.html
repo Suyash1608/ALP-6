@@ -221,20 +221,17 @@
 
 @media (max-width: 768px) {
 .navbar {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center align */
-        padding: 10px; /* Add padding for mobile */
-    }
-
-    .navbar a {
-        width: 100%; /* Make links full width */
-        text-align: center; /* Center text */
-        margin: 5px 0; /* Add margin for spacing */
+        flex-wrap: wrap; /* Allow items to wrap */
     }
 
     #icon {
-        margin-bottom: 10px; /* Add space below the title */
-        font-size: 1.5em; /* Adjust size */
+        font-size: 2em; /* Larger logo size for mobile */
+    }
+
+    .navbar a {
+        padding: 10px 12px; /* Adjust padding */
+        font-size: 0.9em; /* Slightly smaller font size for mobile */
+        margin: 5px; /* Adjust margin for spacing */
     }
     
     .footer-grid {
