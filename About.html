@@ -9,85 +9,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0e7d5;
-            /* Light beige background */
-            color: #333;
-            /* Dark grey text */
-        }
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e7d5;
+    color: #333;
+}
 
-        .navbar {
-            display: flex;
-            align-items: center;
-            background-color: #000;
-            /* Black background */
-            padding: 15px 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-        #icon {
-            font-family: "Caveat", cursive;
-            color: white;
-            /* White text */
-            margin-right: auto;
-            padding: 14px 16px;
-            font-size: 1.5em;
-            text-decoration: none;
-        }
+#icon {
+    font-family: "Caveat", cursive;
+    color: white;
+    margin-right: auto;
+    padding: 14px 16px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
 
-        #icon:hover {
-            background-color: transparent;
-            color: white;
-        }
+.navbar a {
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
+.navbar a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
 
-        .navbar a {
-            color: white;
-            /* White text */
-            padding: 12px 15px;
-            text-decoration: none;
-            border-radius: 10px;
-            margin: 0 5px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+section {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s;
+}
 
-        .navbar a:hover {
-            background-color: #555;
-            /* Dark grey on hover */
-            transform: scale(1.05);
-        }
+section:hover {
+    transform: translateY(-5px);
+}
 
-        section {
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px auto;
-            background-color: #ffffff; /* White background for sections */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            max-width: 800px; /* Center the section */
-            transition: transform 0.3s;
-        }
-        section:hover {
-            transform: translateY(-5px);
-        }
+h1, h2 {
+    color: #000;
+    text-align: center;
+}
 
-        h1,
-        h2 {
-            color: #000; /* Black for headings */
-            text-align: center;
-        }
+h2 {
+    margin-top: 20px;
+    font-weight: 300;
+}
 
-        h2 {
-            margin-top: 20px;
-            font-weight: 300; /* Lighter font weight for a softer look */
-        }
-
-        footer {
+footer {
     text-align: center;
     padding: 20px 0;
-    background: #000; /* Black footer */
-    color: white; /* White text */
+    background: #000;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -108,32 +96,22 @@
     padding: 0;
 }
 
-.social-icons li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.social-icons a {
-    color: white; /* White text */
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #555; /* Dark grey on hover */
-}
-
+.social-icons li, 
 .nav-links li {
-    margin: 10px;
+    margin: 0 10px;
 }
 
+.social-icons a, 
 .nav-links a {
-    color: white; /* White text */
+    color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
+.social-icons a:hover, 
 .nav-links a:hover {
+    color: #555;
     text-decoration: underline;
-    color: #555; /* Dark grey on hover */
 }
 
 .footer-contact {
@@ -145,45 +123,63 @@
 }
 
 @media (max-width: 768px) {
+    #icon {
+        font-size: 2em;
+        text-align: center;
+        margin: 0 30%;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+        font-size: 0.9em;
+        margin: 5px;
+    }
+
     .footer-grid {
-        grid-template-columns: 1fr; /* Stack items vertically */
-        padding: 10px; /* Add some padding for mobile */
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
 
-    .social-icons ul,
+    .social-icons ul, 
     .nav-links ul {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center items */
-        padding: 0; /* Remove padding */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .social-icons li {
-        margin: 5px 0; /* Adjust margin for spacing */
+    section {
+        margin: 20px auto;
     }
 
-    .nav-links li {
-        margin: 5px 0; /* Adjust margin for spacing */
+    section > p {
+        font-size: 1em;
+        text-align: left;
     }
-    
-    .footer-contact {
-        text-align: center; /* Center text for better visibility */
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
+section > p {
+    font-style: italic;
+    text-align: left;
+    margin: 10px 0;
+}
 
-        section > p {
-            font-style: italic;
-            text-align: left; /* Centered text for better alignment */
-            margin: 10px 0; /* Spacing between paragraphs */
-        }
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10%;
+    max-width: 200px;
+    border: 5px solid #ccc;
+}
 
-        img {
-            display: block; /* Block display for images */
-            margin: 20px auto; /* Centering images */
-            border-radius: 50%; /* Rounded images */
-            max-width: 200px; /* Responsive image size */
-            border: 5px solid #ccc; /* Light gray border */
-        }
     </style>
 </head>
 
@@ -197,29 +193,43 @@
         <a href="Events.html">EVENTS</a>
         <a href="Press.html">PRESS</a>
         <a href="FAQs.html">FAQs</a>
-        <a href="Carriers.html">CAREERS</a>
+        <a href="Careers.html">CAREERS</a>
         <a href="Contacts.html">CONTACT</a>
     </div>
 
     <section>
         <h1>From the Founder’s Heart: Uniting Generations!</h1>
         <img src="Images/founder.jpeg" alt="Founder Image">
-        <p>It’s hard to pinpoint when my admiration for the elderly began, but it has always been a part of who I am. As I reflect on the friendships I’ve formed, many of my closest companions are those with silver hair and golden hearts. Their grounded perspectives and profound wisdom have enriched my life in countless ways, and I can’t help but see the youthful spirit that shines in their eyes when we share moments together. Intergenerational connections are incredibly special, perhaps even more so than any other relationships.</p>
+        <p>It’s hard to pinpoint when my admiration for the elderly began, but it has always been a part of who I am. As
+            I reflect on the friendships I’ve formed, many of my closest companions are those with silver hair and
+            golden hearts. Their grounded perspectives and profound wisdom have enriched my life in countless ways, and
+            I can’t help but see the youthful spirit that shines in their eyes when we share moments together.
+            Intergenerational connections are incredibly special, perhaps even more so than any other relationships.</p>
 
-        <p>Yet, as I’ve spoken to more people, I’ve become aware that over 15 million elderly individuals in India live alone. While they may manage their daily needs, many face profound loneliness, whether due to the loss of loved ones or families that are simply too busy to connect.</p>
+        <p>Yet, as I’ve spoken to more people, I’ve become aware that over 15 million elderly individuals in India live
+            alone. While they may manage their daily needs, many face profound loneliness, whether due to the loss of
+            loved ones or families that are simply too busy to connect.</p>
 
-        <p>Today, I’m fortunate to be joined by a passionate team of six empathetic graduates and professionals who, like me, have found joy and friendship in their relationships with older adults. We share a common vision: to foster these meaningful connections for those who yearn for companionship.</p>
+        <p>Today, I’m fortunate to be joined by a passionate team of six empathetic graduates and professionals who,
+            like me, have found joy and friendship in their relationships with older adults. We share a common vision:
+            to foster these meaningful connections for those who yearn for companionship.</p>
 
-        <p>After an insightful beta phase filled with invaluable lessons, we are convinced that this is the path forward. We wholeheartedly believe in the love and comfort that come from bridging generations, and we are committed to nurturing these bonds with the utmost empathy and care.</p>
+        <p>After an insightful beta phase filled with invaluable lessons, we are convinced that this is the path
+            forward. We wholeheartedly believe in the love and comfort that come from bridging generations, and we are
+            committed to nurturing these bonds with the utmost empathy and care.</p>
 
-        <p>With the trust and faith our Grandpals and their families have shown in us, I’m excited to say: The ALP-6 are on the way!</p>
+        <p>With the trust and faith our Grandpals and their families have shown in us, I’m excited to say: The ALP-6 are
+            on the way!</p>
     </section>
 
     <section>
         <h1>We are ALP-6</h1>
         <img src="Images/team.jpeg" alt="Team Image">
-        <p style="font-style: normal; text-align: center; margin-left: 10%; margin-right: 10%; font-size: large; font-weight: 400;">
-            We strive to offer more than just a service; we aim to provide a truly enriching experience for our cherished Grandpals. Our mission is straightforward: to cultivate an environment where our Grandpals feel valued, heard, and supported, embracing them as if they were members of our own family.
+        <p
+            style="font-style: normal; text-align: center; margin-left: 10%; margin-right: 10%; font-size: large; font-weight: 400;">
+            We strive to offer more than just a service; we aim to provide a truly enriching experience for our
+            cherished Grandpals. Our mission is straightforward: to cultivate an environment where our Grandpals feel
+            valued, heard, and supported, embracing them as if they were members of our own family.
         </p>
     </section>
 
@@ -244,7 +254,7 @@
                     </ul>
                     <ul>
                         <li><a href="Services.html">Services</a></li>
-                        <li><a href="Carriers.html">Careers</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
                         <li><a href="Events.html">Events</a></li>
                         <li><a href="Contacts.html">Contact Us</a></li>
                     </ul>
@@ -255,7 +265,8 @@
                 <h2 style="color: white;">Contact</h2>
                 <p>(open from Monday to Friday from 10AM-6PM):</p>
                 <p>Tel: <a href="tel:+xx xxxxx xxxxx" style="color: white;">+xx xxxxx xxxxx</a></p>
-                <p>Email: <a style="text-decoration: none; color: white;" href="mailto:contact@alp6.in">contact@alp6.in</a></p>
+                <p>Email: <a style="text-decoration: none; color: white;"
+                        href="mailto:contact@alp6.in">contact@alp6.in</a></p>
             </div>
         </div>
 
