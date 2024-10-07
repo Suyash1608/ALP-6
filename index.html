@@ -232,18 +232,53 @@
         padding: 0; /* Remove padding */
     }
 
-    .social-icons li {
-        margin: 5px 0; /* Adjust margin for spacing */
-    }
-
+    .social-icons li,
     .nav-links li {
         margin: 5px 0; /* Adjust margin for spacing */
     }
-    
+
     .footer-contact {
         text-align: center; /* Center text for better visibility */
     }
+
+    header {
+        display: block; /* Change to block to stack header elements */
+        text-align: center; /* Center text */
+    }
+
+    header > div {
+        margin: 10px auto; /* Adjust margin for spacing */
+    }
+
+    .item {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+
+    .text-section {
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center text */
+    }
+
+    .image-section {
+        margin-top: 10px; /* Add space between text and image */
+    }
+
+    .testimonials {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center; /* Center items */
+    }
+
+    .testimonial-card {
+        width: 90%; /* Make cards responsive */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
+
 
 
         section>p {
