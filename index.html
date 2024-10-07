@@ -220,18 +220,21 @@
 }
 
 @media (max-width: 768px) {
-.navbar {
-        flex-wrap: wrap; /* Allow items to wrap */
+ .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align */
+        padding: 10px; /* Adjust padding for mobile */
     }
 
     #icon {
         font-size: 2em; /* Larger logo size for mobile */
+        margin-bottom: 10px; /* Space below logo */
     }
 
     .navbar a {
         padding: 10px 12px; /* Adjust padding */
         font-size: 0.9em; /* Slightly smaller font size for mobile */
-        margin: 5px; /* Adjust margin for spacing */
+        margin: 5px 0; /* Adjust margin for spacing */
     }
     
     .footer-grid {
