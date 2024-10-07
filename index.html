@@ -220,6 +220,23 @@
 }
 
 @media (max-width: 768px) {
+.navbar {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align */
+        padding: 10px; /* Add padding for mobile */
+    }
+
+    .navbar a {
+        width: 100%; /* Make links full width */
+        text-align: center; /* Center text */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+
+    #icon {
+        margin-bottom: 10px; /* Add space below the title */
+        font-size: 1.5em; /* Adjust size */
+    }
+    
     .footer-grid {
         grid-template-columns: 1fr; /* Stack items vertically */
         padding: 10px; /* Add some padding for mobile */
