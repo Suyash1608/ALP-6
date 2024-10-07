@@ -63,24 +63,29 @@
             padding: 20px;
             border-radius: 10px;
             margin: 30px auto;
-            background-color: #ffffff; /* White background for sections */
+            background-color: #ffffff;
+            /* White background for sections */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            max-width: 800px; /* Center the section */
+            max-width: 800px;
+            /* Center the section */
             transition: transform 0.3s;
         }
+
         section:hover {
             transform: translateY(-5px);
         }
 
         h1,
         h2 {
-            color: #000; /* Black for headings */
+            color: #000;
+            /* Black for headings */
             text-align: center;
         }
 
         h2 {
             margin-top: 20px;
-            font-weight: 300; /* Lighter font weight for a softer look */
+            font-weight: 300;
+            /* Lighter font weight for a softer look */
         }
 
         .job-listing {
@@ -175,15 +180,43 @@
         @media (max-width: 768px) {
             .footer-grid {
                 grid-template-columns: 1fr;
+                /* Stack items vertically */
+                padding: 10px;
+                /* Add some padding for mobile */
+            }
+
+            .social-icons ul,
+            .nav-links ul {
+                flex-direction: column;
+                /* Stack links vertically */
+                align-items: center;
+                /* Center items */
+                padding: 0;
+                /* Remove padding */
+            }
+
+            .social-icons li {
+                margin: 5px 0;
+                /* Adjust margin for spacing */
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+                /* Adjust margin for spacing */
+            }
+
+            .footer-contact {
+                text-align: center;
+                /* Center text for better visibility */
             }
         }
+
 
         section>p {
             font-style: italic;
             text-align: center;
             /* Centered text for better alignment */
         }
-        
     </style>
 </head>
 
@@ -201,99 +234,99 @@
         <a href="Contacts.html">CONTACT</a>
     </div>
 
-        <h1 style="text-align: center;">Join Our Team at ALP-6!</h1>
-        <section>
+    <h1 style="text-align: center;">Join Our Team at ALP-6!</h1>
+    <section>
 
-            <div class="career-section">
-                <h2>Why Work With Us?</h2>
-                <p>At ALP-6, we believe in creating meaningful connections between generations. We are committed to
-                    providing a warm and supportive environment for our employees, where they can thrive both personally
-                    and professionally. Join us in making a difference in the lives of our Grandpals!</p>
-        </section>
+        <div class="career-section">
+            <h2>Why Work With Us?</h2>
+            <p>At ALP-6, we believe in creating meaningful connections between generations. We are committed to
+                providing a warm and supportive environment for our employees, where they can thrive both personally
+                and professionally. Join us in making a difference in the lives of our Grandpals!</p>
+    </section>
 
-        <section>
+    <section>
 
-            <h2>Current Openings</h2>
+        <h2>Current Openings</h2>
 
-            <div class="job-listing">
-                <h3>Companion for Seniors</h3>
-                <p><strong>Location:</strong> Various locations<br>
-                    <strong>Job Type:</strong> Part-time<br>
-                    <strong>Responsibilities:</strong> Engage with seniors, provide companionship, assist with daily
-                    activities.
-                </p>
-                <a class="apply-button" href="#">Apply Now</a>
-            </div>
+        <div class="job-listing">
+            <h3>Companion for Seniors</h3>
+            <p><strong>Location:</strong> Various locations<br>
+                <strong>Job Type:</strong> Part-time<br>
+                <strong>Responsibilities:</strong> Engage with seniors, provide companionship, assist with daily
+                activities.
+            </p>
+            <a class="apply-button" href="#">Apply Now</a>
+        </div>
 
-            <div class="job-listing">
-                <h3>Community Outreach Coordinator</h3>
-                <p><strong>Location:</strong> Remote<br>
-                    <strong>Job Type:</strong> Full-time<br>
-                    <strong>Responsibilities:</strong> Develop community programs, foster relationships with local
-                    organizations, manage outreach efforts.
-                </p>
-                <a class="apply-button" href="#">Apply Now</a>
-            </div>
+        <div class="job-listing">
+            <h3>Community Outreach Coordinator</h3>
+            <p><strong>Location:</strong> Remote<br>
+                <strong>Job Type:</strong> Full-time<br>
+                <strong>Responsibilities:</strong> Develop community programs, foster relationships with local
+                organizations, manage outreach efforts.
+            </p>
+            <a class="apply-button" href="#">Apply Now</a>
+        </div>
 
-            <div class="job-listing">
-                <h3>Marketing Specialist</h3>
-                <p><strong>Location:</strong> Remote<br>
-                    <strong>Job Type:</strong> Full-time<br>
-                    <strong>Responsibilities:</strong> Create and implement marketing strategies, manage social media,
-                    analyze campaign performance.
-                </p>
-                <a class="apply-button" href="#">Apply Now</a>
-            </div>
+        <div class="job-listing">
+            <h3>Marketing Specialist</h3>
+            <p><strong>Location:</strong> Remote<br>
+                <strong>Job Type:</strong> Full-time<br>
+                <strong>Responsibilities:</strong> Create and implement marketing strategies, manage social media,
+                analyze campaign performance.
+            </p>
+            <a class="apply-button" href="#">Apply Now</a>
+        </div>
 
-            <h2>How to Apply</h2>
-            <p>If you are interested in joining our team, please send your resume and a cover letter to <a
-                    style="text-decoration: none; color:gray;" href="mailto:careers@alp6.in">careers@alp6.in</a>. We
-                look forward to hearing from you!</p>
-            </div>
-        </section>
+        <h2>How to Apply</h2>
+        <p>If you are interested in joining our team, please send your resume and a cover letter to <a
+                style="text-decoration: none; color:gray;" href="mailto:careers@alp6.in">careers@alp6.in</a>. We
+            look forward to hearing from you!</p>
+        </div>
+    </section>
 
 
-        <footer>
-            <h1 style="color: white;">Follow us along our journey</h1>
-            <div class="footer-grid">
+    <footer>
+        <h1 style="color: white;">Follow us along our journey</h1>
+        <div class="footer-grid">
 
-                <div class="footer-links">
-                    <div class="footer-section social-icons">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-section nav-links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Press.html">Press</a></li>
-                            <li><a href="About.html">About Us</a></li>
-                            <li><a href="FAQs.html">FAQs</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="Services.html">Services</a></li>
-                            <li><a href="Carriers.html">Careers</a></li>
-                            <li><a href="Events.html">Events</a></li>
-                            <li><a href="Contacts.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+            <div class="footer-links">
+                <div class="footer-section social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
                 </div>
 
-                <div class="footer-contact">
-                    <h2 style="color: white;">Contact</h2>
-                    <p>(open from Monday to Friday from 10AM-6PM):</p>
-                    <p>Tel :<a href="tel:+xx xxxxx xxxxx"></a> +xx xxxxx xxxxx</p>
-                    <p>Email: <a style="text-decoration: none; color: white;"
-                            href="mailto:contact@alp6.in">contact@alp6.in</a></p>
+                <div class="footer-section nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Press.html">Press</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Carriers.html">Careers</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                        <li><a href="Contacts.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <p>&copy; ALP-6 All Rights Reserved.</p>
-        </footer>
+            <div class="footer-contact">
+                <h2 style="color: white;">Contact</h2>
+                <p>(open from Monday to Friday from 10AM-6PM):</p>
+                <p>Tel :<a href="tel:+xx xxxxx xxxxx"></a> +xx xxxxx xxxxx</p>
+                <p>Email: <a style="text-decoration: none; color: white;"
+                        href="mailto:contact@alp6.in">contact@alp6.in</a></p>
+            </div>
+        </div>
+
+        <p>&copy; ALP-6 All Rights Reserved.</p>
+    </footer>
 
 </body>
 
